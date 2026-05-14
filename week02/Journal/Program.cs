@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 
 class Program
 {
-    // Class-level field (accessible throughout the class)
+    
     static List<JournalEntry> journalEntries = new List<JournalEntry>();
 
     static void Main(string[] args)
@@ -27,6 +27,9 @@ class Program
                 JournalEntry newEntry = new JournalEntry();
                 newEntry.CreateNewEntry();
                 journalEntries.Add(newEntry);
+
+                
+
             }
 
             else if (userChoice == 2)// Display

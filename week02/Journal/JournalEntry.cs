@@ -5,6 +5,8 @@ public class JournalEntry()
     //Data
     public string _entry;
     public string _prompt;
+
+    public string _date;
     //prompt list(add more for actual program)(current test)
     private List<string> _prompts = new List<string>
     {
@@ -56,6 +58,9 @@ public class JournalEntry()
         //prompt user and record response
         Console.WriteLine(_prompt);
         _entry = Console.ReadLine();
+
+        // ataches date
+        _date = DateTime.Today.ToShortDateString();
     }
 
 }

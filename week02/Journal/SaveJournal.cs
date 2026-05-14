@@ -9,7 +9,7 @@ public class SaveJournal()
         {
             foreach (JournalEntry entry in entries)
             {
-                outputFile.WriteLine($"{entry._prompt}|{entry._entry}");
+                outputFile.WriteLine($"{entry._prompt}|{entry._entry}|{entry._date}");
             }
           
         }
