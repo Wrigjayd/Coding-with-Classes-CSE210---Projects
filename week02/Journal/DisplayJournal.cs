@@ -6,6 +6,7 @@ public class DisplayJournal()
         {
             Console.WriteLine($"{entry._prompt}");
             Console.WriteLine($"{entry._entry}");
+            Console.WriteLine($"{entry._date}");
         }
     }
 }

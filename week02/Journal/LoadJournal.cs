@@ -12,6 +12,7 @@ public class LoadJournal()
             JournalEntry newEntry = new JournalEntry();
             newEntry._prompt = parts[0];
             newEntry._entry = parts[1];
+            newEntry._date = parts[2];
 
             loadedEntries.Add(newEntry);
         }
